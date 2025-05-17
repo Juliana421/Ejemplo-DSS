@@ -18,7 +18,7 @@ function guardar() {
       redirect: "follow"
   };
   
-  fetch("https://ejemplodss.netlify.app/.netlify/functions/usuarios/usuarios", requestOptions)
+  fetch("https://ejemplo-dss.netlify.app/.netlify/functions/usuarios/usuarios", requestOptions)
       .then((response) => {
           if (!response.ok) {
               throw new Error(`HTTP error! status: ${response.status}`);
@@ -92,7 +92,7 @@ function listar(){
          //https://proyectofinaldsws.netlify.app/.netlify/functions/usuarios
     //fetch("https://ejemplodss.netlify.app/.netlify/functions/usuarios?iden="+ndoc, requestOptions)
     //fetch("https://ejemplodss.netlify.app/.netlify/functions/usuarios?iden="+ndoc, requestOptions)
-    fetch("https://ejemplodss.netlify.app/.netlify/functions/usuarios/usuarios?iden=" + ndoc, requestOptions)
+    fetch("https://ejemplo-dss.netlify.app/.netlify/functions/usuarios/usuarios" + ndoc, requestOptions)
 
       .then((response) =>
         response.text())
